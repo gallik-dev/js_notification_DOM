@@ -7,8 +7,8 @@ const pushNotification = (posTop, posRight, title, description, type) => {
 
   const newDescription = description.replace(/\n/g, '<br>');
 
-  message.classList = `notification ${type}`;
-  h2.classList = 'title';
+  message.className = `notification ${type}`;
+  h2.className = 'title';
   h2.textContent = title;
   p.innerHTML = newDescription;
 
@@ -33,7 +33,7 @@ pushNotification(
 );
 
 pushNotification(
-  150,
+  180,
   10,
   'Title of Error message',
   'Message example.\n ' + 'Notification should contain title and description.',
@@ -41,7 +41,7 @@ pushNotification(
 );
 
 pushNotification(
-  290,
+  320,
   10,
   'Title of Warning message',
   'Message example.\n ' + 'Notification should contain title and description.',
